@@ -4,15 +4,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import strings_ir.String;
-
-class intListTest {
+class IntListTest {
 
 	@Test
 	void test() {
 		
 		int[] lijst = {1, 2, 3, 4};
-		intList mijnLijst = new intList(lijst);
+		IntList mijnLijst = new IntList(lijst);
 		assertArrayEquals(
 				new int[] {1, 2, 3, 4},
 				mijnLijst.getLijst()
@@ -23,7 +21,7 @@ class intListTest {
 		mijnLijst.add(5);
 		
 		int[] lijstNew = {1, 2, 3, 5};
-		intList mijnLijstNew = new intList(lijstNew);
+		IntList mijnLijstNew = new IntList(lijstNew);
 		assertArrayEquals(
 				new int[] {1, 2, 3, 5},
 				mijnLijstNew.getLijst()
